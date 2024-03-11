@@ -29,6 +29,8 @@ router.post("/regis", async (req,res) => {    // async function
     
     try{ 
         const response = new Student(req.body);
+
+        
         const result = await response.save();
         res.status(201).send(`Robo date saved :) hui hui ${response}`);
         console.log(`Date saved : ${result} --- Date saved Successfully :)` );
