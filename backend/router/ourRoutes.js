@@ -4,6 +4,21 @@ const { Student } = require("../models/students");
 const bcrypt = require("bcrypt")
 
 
+
+
+// -------------- GET -------------
+
+router.get("/test", async (req,res) => {
+    try {
+            res.status(201).send("hui hui you are here at backend test");
+
+    }catch(err){
+        console.log(err.message);
+    }
+})
+
+
+
 // -------------------------- POST ------------------------------
 
 
